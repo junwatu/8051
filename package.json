@@ -1,0 +1,28 @@
+{
+    "name": "8051",
+    "displayName": "8051",
+    "description": "8051 Assembly Language Support",
+    "version": "0.1.0",
+    "publisher": "junwatu",
+    "icon": "images/8051.svg",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages", 
+        "Other"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "8051",
+            "aliases": ["8051 Assembly", "8051", "MCS51", "8051 ASM"],
+            "extensions": [".h51",".asm",".a51"],
+            "configuration": "./8051.configuration.json"
+        }],
+        "grammars": [{
+            "language": "8051",
+            "scopeName": "source.asm.8051",
+            "path": "./syntaxes/8051.tmLanguage"
+        }]
+    }
+}
